@@ -6,38 +6,36 @@ This GitHub organisation is the home for our shared technical work.
 **New developer? Start with the kind of work you are here to do.** The overview below
 explains our work areas without publishing the names or contents of private repositories.
 
-## How the work is organised
+## What would you like to work on?
+
+**Choose one box.** These are work areas, not steps. No arrows means there is no
+required order. The grey box is simply a route to help.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"fontFamily": "Arial, sans-serif", "fontSize": "22px", "primaryColor": "#E5F2FC", "primaryTextColor": "#2C2C2B", "primaryBorderColor": "#2783DE", "lineColor": "#7D7A75", "edgeLabelBackground": "#FFFFFF"}, "flowchart": {"htmlLabels": true, "nodeSpacing": 32, "rankSpacing": 40, "padding": 20, "wrappingWidth": 260}, "themeCSS": ".nodeLabel, .nodeLabel *, .cluster-label, .edgeLabel, .edgeLabel * { font-family: Arial, sans-serif !important; } .node, .node rect, .node polygon, .node path, .cluster { filter: none !important; box-shadow: none !important; }"}}%%
 flowchart TB
-    accTitle: Arbora technical work areas
-    accDescr: Six work areas: product, infrastructure, models, internal operations, website experiments and developer navigation. Invisible links arrange the boxes; they are not dependencies or deployment steps.
-    PRODUCT("Product<br/>Behaviour, requirements and implementation")
-    INFRA("Infrastructure<br/>Operated systems and access rules")
-    MODEL("Models<br/>Definition, training and evaluation")
-    OFFICE("Internal operations<br/>Workspace tools and automations")
-    WEB("Website experiments<br/>Interfaces and communication")
-    GUIDE("Developer navigation<br/>Profiles and contribution guidance")
-    PRODUCT ~~~ OFFICE
-    INFRA ~~~ WEB
-    MODEL ~~~ GUIDE
-    classDef product fill:#E4F4E9,stroke:#2E7D5A,color:#07110E,stroke-width:1px
-    classDef tools fill:#DDE4FF,stroke:#4059A8,color:#07110E,stroke-width:1px
-    classDef research fill:#F1EBF8,stroke:#78549A,color:#07110E,stroke-width:1px
-    classDef operations fill:#F5F1E8,stroke:#A67C52,color:#07110E,stroke-width:1px
-    classDef communication fill:#FDE5D3,stroke:#9C4A1A,color:#07110E,stroke-width:1px
-    class PRODUCT product
-    class INFRA,GUIDE tools
-    class MODEL research
-    class OFFICE operations
-    class WEB communication
+    accTitle: What would you like to work on?
+    accDescr: Choose one area: product, cloud and access, AI models, office automation or website. These are choices, not steps. If unsure, ask your Arbora contact.
+    A("<b>Product</b><br/>Build what the service does")
+    B("<b>Cloud &amp; access</b><br/>Run systems safely")
+    C("<b>AI models</b><br/>Train and test models")
+    D("<b>Office automation</b><br/>Help everyday work")
+    E("<b>Website</b><br/>Build pages and interfaces")
+    F("<b>Not sure?</b><br/>Ask your Arbora contact")
+    A ~~~ D
+    B ~~~ E
+    C ~~~ F
+    class A,B,C,D,E area;
+    class F help;
+
+    classDef area fill:#E5F2FC,stroke:#2783DE,color:#2C2C2B,stroke-width:1.5px;
+    classDef help fill:#F9F8F7,stroke:#7D7A75,color:#2C2C2B,stroke-width:1.5px;
+    classDef choice fill:#FBEBDE,stroke:#D5803B,color:#2C2C2B,stroke-width:1.5px;
 ```
 
-**Text equivalent:** product work defines what a service does; infrastructure work
-covers the systems and access rules used to operate it; model work covers model
-construction and evaluation. Internal operations and website experiments have their
-own jobs. Developer navigation helps you find the right place to contribute.
-These are work areas, not a claim that all code is public or that the areas deploy together.
+Text equivalent: choose product, cloud and access, AI models, office automation or
+website work. If unsure, ask your Arbora contact. This overview does not imply that
+all repositories are public or that the work areas deploy together.
 
 ## Find your starting point
 
